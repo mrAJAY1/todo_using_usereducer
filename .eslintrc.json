@@ -1,0 +1,33 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb",
+        "plugin:prettier/recommended",
+        "plugin:react/jsx-runtime"
+    ],
+    "overrides": [
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "react/require-default-props": 0,
+        "prettier/prettier": [
+            "error",
+            {
+                "singleQuote": false,
+                "parser": "flow",
+                "jsxSingleQuote": true
+            }
+        ],
+        "jsx-a11y/label-has-associated-control":0
+    }
+}

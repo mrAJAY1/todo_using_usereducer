@@ -1,0 +1,75 @@
+.todo-container{
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-top: 100px;
+    .title{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .input-form{
+        input{
+            height: 30px;
+            width: 200px;
+            border-radius: 10px;
+            border: 1px solid aqua;
+            box-shadow: 0px 0px 2px rgb(0, 119, 119);
+            padding: 0 10px;
+            color: rgb(1, 77, 77);
+            font-size: large;
+            &:focus{
+                outline: none;
+            }
+        }
+        button{
+            background-color:transparent;
+            border: 1px solid aqua;
+            height: 30px;
+            border-radius: 10px;
+            margin-left: 20px;
+            color:  rgb(0, 119, 119);
+            box-shadow: 0px 0px 2px rgb(0, 119, 119);
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            transition: all ease 0.2s;
+            &:hover{
+                cursor: pointer;
+                box-shadow: 0px 0px 5px rgb(0, 119, 119);
+
+            }
+        }
+    }
+    .display-todo{
+        margin-top: 20px;
+        max-width: 50%;
+        .card{
+        margin-top: 10px;
+        display: flex;
+        border:1px solid gray;
+        box-shadow: 0px 0px 2px rgb(0, 54, 54);
+        border-radius: 10px;
+        width: 300px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        p{
+            width:70%;
+            text-align: start;
+        }
+        button{
+            border: 0;
+            background-color: transparent;
+            width:30%;
+            color:rgb(3, 63, 63);
+            &:hover{
+                cursor:pointer;
+            }
+        }
+    }
+    
+    }
+    
+}
